@@ -9,7 +9,7 @@
 }
 
 .configurator-left {
-    float: left;
+    float: right;
     width: calc(100% - 310px);
     padding-right: 24px;
 }
@@ -25,17 +25,22 @@
 }
 
 .conf-category ul {
-    margin: 10px 0 10px 14px;
+    margin: 10px 0 10px 24px;
 }
 
 .conf-category li {
     padding: 0;
 }
-
 .conf-category {
     padding: 14px 12px;
     border: 1px solid #f2f2f2;
     list-style: none;
+    margin: 0;
+    position: relative;
+    top: -1px;
+}
+.conf-category:first-child {
+    top: 0;
 }
 
 .conf-list__item {
@@ -50,30 +55,155 @@
 .conf-list__link {
     position: relative;
     padding-left: 21px;
+    color: #292929;
 }
 
 .conf-list__link.show-submenu {
     color: #008ddc;
 }
+
 .conf-list__link.show-submenu::before {
-    content: '-';
-    font-size: 16px;
+    content: '';
+    background-color: #008ddc;
+}
+
+.conf-list__link.show-submenu::after {
+    content: '';
+    display: none;
 }
 
 .conf-list__link::before {
-    content: '+';
+    content: '';
     font-size: 16px;
+    width: 10px;
+    border-radius: 10px;
+    background-color: #cccccc;
+    height: 2px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
 }
 
+.conf-list__link::after {
+    content: '';
+    font-size: 16px;
+    width: 2px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #cccccc;
+    position: absolute;
+    top: 6px;
+    left: 4px;
+}
+
 .conf-list {
+    display: none;
+    color: #292929;
+}
+
+.conf-form {
+    /*display: none;*/
+}
+
+/*.conf-form__item::after {*/
+    /*content: '';*/
+    /*height: 100%;*/
+    /*display: inline-block;*/
+    /*vertical-align: middle;*/
+/*}*/
+
+/*.conf-form__input {*/
+    /*display: inline-block;*/
+    /*vertical-align: middle;*/
+    /*width: 5%;*/
+    /*border: none;*/
+    /*outline: none;*/
+/*}*/
+
+/*.conf-form__label {*/
+    /*display: inline-block;*/
+    /*vertical-align: middle;*/
+    /*width: 94%;*/
+/*}*/
+
+.conf-form__input {
     display: none;
 }
 
+.conf-form__label {
+    display: block;
+    padding-left: 21px;
+    position: relative;
+    cursor: pointer;
+}
+
+.conf-form__radio::after {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50px;
+    top: 50%;
+    left: 0;
+    border: 1px solid #cccccc;
+    transform: translateY(-50%);
+}
+
+.conf-form__radio::before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50px;
+    top: 50%;
+    left: 4px;
+    background-color: #cccccc;
+    transform: translateY(-50%);
+}
+
+.conf-form__input:checked + .conf-form__radio:after,
+.conf-form__input:checked + .conf-form__check:after {
+    content: '';
+    border-color: #008ddc;
+}
+.conf-form__input:checked + .conf-form__radio::before {
+    content: '';
+    background-color: #008ddc;
+}
+
+.conf-form__check::after {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 2px;
+    top: 50%;
+    left: 0;
+    border: 1px solid #cccccc;
+    transform: translateY(-50%);
+}
+
+.conf-form__input:checked + .conf-form__check:after {
+    content: '';
+    border-color: #008ddc;
+}
+
+.conf-form__input:checked + .conf-form__check::before {
+    content: '';
+    background-color: #008ddc;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+}
+
+
 /*карточка в конфигураторе*/
+/*---------------------------------------------*/
 .c-card-configurator {
     padding: 10px;
     background-color: #f9f9f9;
@@ -124,7 +254,6 @@
     display: inline-block;
     width: 39%;
     text-align: right;
-    white-space: nowrap;
     vertical-align: middle;
 }
 
@@ -202,18 +331,24 @@
 
 .c-button {
     display: inline-block;
-    background-color: #f3f3f5;
+    background-color: #eee;
     padding: 8px 22px;
     font-size: 16px;
-    color: #ffffff;
+    color: #292929;
     text-align: center;
     border-radius: 4px;
     vertical-align: middle;
+    min-width: 126px;
+}
+
+.c-button:hover {
+    background-color: #e7e7e7;
 }
 
 .c-button-active {
     background-color: #008ddc;
     transition: all .1s ease-out;
+    color: #ffffff;
 }
 
 .c-button-active:hover {
@@ -265,4 +400,108 @@
 .configurator-total__link a {
     color: #008ddc;
     text-decoration: underline;
+}
+
+
+@media screen and (max-width: 1280px) {
+    .c-card-configurator__left {
+        width: 100%;
+        display: block;
+        padding: 0;
+    }
+
+    .c-card-configurator__right {
+        width: 100%;
+        display: block;
+        text-align: left;
+    }
+
+
+    .c-card-configurator::after,
+    .c-card-configurator::before {
+        content: '';
+        display: none;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .conf-category ul {
+        margin: 10px 0 10px 15px;
+    }
+
+    .configurator-left,
+    .configurator-right {
+        float: none;
+        width: 100%;
+        padding:0;
+    }
+
+    .configurator-total__body {
+        display: none;
+    }
+
+    .configurator-total__price {
+        position: relative;
+        cursor: pointer;
+    }
+    .configurator-total__price::after {
+        content: '';
+        position: absolute;
+        right: 20px;
+        top: 57%;
+        transform:translateY(-50%);
+        border: 5px solid transparent;	border-top: 5px solid #000;
+    }
+
+    .show-conf-total {
+        display: block !important;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .conf-category ul {
+        margin: 10px 0 10px 5px;
+    }
+
+    .conf-form {
+        border-bottom: 5px solid #ccc;
+    }
+
+    .conf-form__label {
+        padding-left: 0;
+    }
+
+    .conf-form__radio::before {
+        content: '';
+        top: 31px;
+        left: 17px;
+    }
+
+    .conf-form__radio::after {
+        content: '';
+        top: 31px;
+        left: 13px;
+    }
+    .conf-form__input:checked + .conf-form__check::before {
+        content: '';
+        top: 31px;
+        left: 15px;
+    }
+
+    .conf-form__check::after {
+        content: '';
+        top: 31px;
+        left: 13px;
+    }
+
+    .c-card-configurator .c-button,
+    .configurator-total__btn .c-button {
+        min-width: 0;
+        padding: 8px 14px;
+    }
+
+    .c-card-configurator__img {
+        margin-right: 0;
+        margin-left: 26px;
+    }
 }
