@@ -16,14 +16,14 @@
     <fileColor scope="Non-Project Files (Material Palenight)" color="2f2e43" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5553719">
+    <splitter split-orientation="horizontal" split-proportion="0.6837466">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1509">
-                  <caret line="1703" column="38" lean-forward="false" selection-start-line="1703" selection-start-column="38" selection-end-line="1703" selection-end-column="38" />
+                <state relative-caret-position="422">
+                  <caret line="1690" column="217" lean-forward="false" selection-start-line="1690" selection-start-column="217" selection-end-line="1690" selection-end-column="217" />
                   <folding>
                     <element signature="n#div#1;n#form#0;n#section#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
                     <element signature="n#div#0;n#label#0;n#div#1;n#div#0;n#li#2;n#ul#0;n#li#1;n#ul#0;n#li#0;n#ul#0;n#li#0;n#ul#0;n#div#1;n#form#0;n#section#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -46,8 +46,8 @@
           <file leaf-file-name="configurator.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/configurator.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="466" column="38" lean-forward="false" selection-start-line="466" selection-start-column="38" selection-end-line="466" selection-end-column="38" />
+                <state relative-caret-position="353">
+                  <caret line="500" column="18" lean-forward="false" selection-start-line="500" selection-start-column="18" selection-end-line="500" selection-end-column="18" />
                   <folding />
                 </state>
               </provider>
@@ -56,8 +56,8 @@
           <file leaf-file-name="configurator.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/configurator.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
-                  <caret line="20" column="65" lean-forward="false" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
+                <state relative-caret-position="546">
+                  <caret line="26" column="58" lean-forward="false" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
                   <folding />
                 </state>
               </provider>
@@ -75,6 +75,8 @@
       <find>configurator</find>
       <find>.c-card-configurator__right</find>
       <find>.configurator-left</find>
+      <find>.configurator-total</find>
+      <find>c-card-configurator__img</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -83,8 +85,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/configurator.js" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/configurator.css" />
       </list>
     </option>
@@ -235,12 +237,12 @@
       <workItem from="1521641799471" duration="2833000" />
       <workItem from="1521653542913" duration="8177000" />
       <workItem from="1521706899847" duration="724000" />
-      <workItem from="1521708373515" duration="10723000" />
+      <workItem from="1521708373515" duration="12100000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22457000" />
+    <option name="totallyTimeSpent" value="23834000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="-8" width="1873" height="1096" extended-state="6" />
@@ -362,10 +364,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/configurator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="26" column="58" lean-forward="false" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1509">
-          <caret line="1703" column="38" lean-forward="false" selection-start-line="1703" selection-start-column="38" selection-end-line="1703" selection-end-column="38" />
+        <state relative-caret-position="422">
+          <caret line="1690" column="217" lean-forward="false" selection-start-line="1690" selection-start-column="217" selection-end-line="1690" selection-end-column="217" />
           <folding>
             <element signature="n#div#1;n#form#0;n#section#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#label#0;n#div#1;n#div#0;n#li#2;n#ul#0;n#li#1;n#ul#0;n#li#0;n#ul#0;n#li#0;n#ul#0;n#div#1;n#form#0;n#section#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -380,18 +390,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/configurator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="20" column="65" lean-forward="false" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/configurator.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="466" column="38" lean-forward="false" selection-start-line="466" selection-start-column="38" selection-end-line="466" selection-end-column="38" />
+        <state relative-caret-position="353">
+          <caret line="500" column="18" lean-forward="false" selection-start-line="500" selection-start-column="18" selection-end-line="500" selection-end-column="18" />
           <folding />
         </state>
       </provider>

@@ -21,6 +21,12 @@ $(function(){
         $this.siblings('.configurator-total__body').toggleClass('show-conf-total');
     });
 
+    $(document).on('click', '.configurator-total__del', function(e){
+        e.preventDefault();
+        $this = $(this);
+        $this.parents('.configurator-total__item').remove();
+    });
+
 
 
 
