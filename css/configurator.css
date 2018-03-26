@@ -160,15 +160,7 @@
 }
 
 .conf-form__radio::before {
-    content: '';
-    position: absolute;
-    width: 6px;
-    height: 6px;
-    border-radius: 50px;
-    top: 50%;
-    left: 4px;
-    background-color: #cccccc;
-    transform: translateY(-50%);
+
 }
 
 .conf-form__input:checked + .conf-form__radio:after,
@@ -179,6 +171,14 @@
 .conf-form__input:checked + .conf-form__radio::before {
     content: '';
     background-color: #008ddc;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50px;
+    top: 50%;
+    left: 4px;
+    /*background-color: #cccccc;*/
+    transform: translateY(-50%);
 }
 
 .conf-form__check::after {
