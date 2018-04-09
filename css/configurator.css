@@ -12,11 +12,14 @@
     float: right;
     width: calc(100% - 310px);
     padding-right: 24px;
+    /*height: 1000px;*/
 }
 
 .configurator-right {
     width: 310px;
+    max-width: 310px;
     float: right;
+    /*right: 10px;*/
 }
 
 .conf-category ul::before,
@@ -371,6 +374,7 @@
     padding: 22px;
     background-color: #f8f8f9;
     border: 1px solid #f2f2f2;
+    max-width: 310px;
 }
 
 .configurator-total__price {
@@ -493,7 +497,17 @@
     .configurator-right {
         float: none;
         width: 100%;
+        max-width: 100%;
         padding:0;
+    }
+
+    .sticky-placeholder {
+        display: none !important;
+    }
+
+    .configurator-total {
+        max-width: 100%;
+        position: static !important;
     }
 
     .configurator-total__body {
@@ -569,4 +583,9 @@
     .configurator-total {
         padding: 11px;
     }
+}
+
+#stop-sticky {
+    display: block;
+    margin-bottom: 20px;
 }

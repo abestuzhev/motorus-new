@@ -1,5 +1,42 @@
 $(function(){
 
+    // $('.configurator-right').stick_in_parent();
+    // $('.configurator-total').stickUp({
+    //     topMargin: "10"
+    // });
+    $(".sticky").sticky({
+        topSpacing: 10,
+        zIndex:2,
+        stopper: "#stop-sticky"
+    });
+    // var windowWidth = $(window).width();
+    //
+    // if(windowWidth > 1100){
+    //     $(".sticky").sticky({
+    //         topSpacing: 10,
+    //         zIndex:2,
+    //         stopper: "#stop-sticky"
+    //     });
+    // }
+    //
+    // $(window).resize(function(){
+    //     if(windowWidth > 1100){
+    //         $(".sticky").sticky({
+    //             topSpacing: 10,
+    //             zIndex:2,
+    //             stopper: "#stop-sticky"
+    //         });
+    //     }
+    // });
+
+
+
+
+
+
+
+
+
     var cardConf = '',
         cardConfWidth = '',
         windowWidth = $(window).width();
