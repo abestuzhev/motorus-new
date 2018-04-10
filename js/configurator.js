@@ -2,7 +2,7 @@ $(window).load(function () {
     //липкая правая колонка
     $(".sticky").sticky({
         topSpacing: 20,
-        zIndex:999999,
+        zIndex:994,
         stopper: "#stop-sticky"
     });
     //******************************************
