@@ -1,11 +1,15 @@
-$(function(){
+$(window).load(function () {
     //липкая правая колонка
     $(".sticky").sticky({
-        topSpacing: 10,
-        zIndex:2,
+        topSpacing: 20,
+        zIndex:999999,
         stopper: "#stop-sticky"
     });
     //******************************************
+});
+
+
+$(function(){
 
     var cardConf = '',
         cardConfWidth = '',
