@@ -483,11 +483,27 @@
     font-size: 30px;
 }
 
-/*fieldset, label { margin: 0; padding: 0; }*/
-/*body{ margin: 20px; }*/
-/*h1 { font-size: 1.5em; margin: 10px; }*/
+
 
 /****** Style Star Rating Widget *****/
+
+
+.simple-rating {
+    display: block;
+    float: left;
+}
+
+.simple-rating .star:before {
+    font-size: 16px;
+    font-family: FontAwesome;
+    display: inline-block;
+    content:"\f005";
+    color: #dddddd;
+}
+.simple-rating .starFull:before {
+    color: #ffd700;
+}
+
 
 .rating {
     border: none;
