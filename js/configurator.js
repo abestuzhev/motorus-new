@@ -1,11 +1,9 @@
 $(window).load(function () {
-    //липкая правая колонка
-    $(".sticky").sticky({
-        topSpacing: 20,
-        zIndex:994,
-        stopper: "#stop-sticky"
-    });
-    //******************************************
+    $('.sticky').fgStickyComponent({
+        topoffset: 100,
+        startselector: $('.configurator'),
+        debug: true
+    })
 });
 
 

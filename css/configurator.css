@@ -20,6 +20,7 @@
     max-width: 310px;
     float: right;
     /*right: 10px;*/
+    min-height: 300px;
 }
 
 .conf-category ul::before,
@@ -309,6 +310,12 @@
     line-height: 1;
     white-space: normal;
 }
+.c-card-configurator__title a {
+    color: #292929;
+}
+.c-card-configurator__title a:hover {
+    color: #008ddc;
+}
 
 .c-card-configurator__vendor {
     font-weight: 400;
@@ -466,6 +473,64 @@
     content: '';
     background-color: #008ddc;
 }
+
+
+/*START rating*/
+
+.star:before {
+    font-family: FontAwesome;
+    content:"\f005";
+    font-size: 30px;
+}
+
+/*fieldset, label { margin: 0; padding: 0; }*/
+/*body{ margin: 20px; }*/
+/*h1 { font-size: 1.5em; margin: 10px; }*/
+
+/****** Style Star Rating Widget *****/
+
+.rating {
+    border: none;
+    float: left;
+}
+.rating label {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.rating > input { display: none; }
+
+.rating > label:before {
+    margin: 2px;
+    font-size: 14px;
+    font-family: FontAwesome;
+    display: inline-block;
+    content:"\f005";
+}
+
+.rating > .half:before {
+    content: "\f089";
+    position: absolute;
+}
+
+.rating > label {
+    color: #ddd;
+    float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  }
+
+/*END rating*/
+
 
 
 @media screen and (max-width: 1280px) {
