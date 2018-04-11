@@ -490,17 +490,21 @@
 
 .simple-rating {
     display: block;
-    float: left;
+    font-size: 0;
 }
 
-.simple-rating .star:before {
-    font-size: 16px;
+.simple-rating .simple-star {
+    margin: 0 2px;
+    display: inline-block;
+}
+.simple-rating .simple-star:before {
+    font-size: 14px;
     font-family: FontAwesome;
     display: inline-block;
     content:"\f005";
     color: #dddddd;
 }
-.simple-rating .starFull:before {
+.simple-rating .simple-starFull:before {
     color: #ffd700;
 }
 
